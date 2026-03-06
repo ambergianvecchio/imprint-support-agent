@@ -1,6 +1,8 @@
 import { anthropic, SYSTEM_PROMPT } from "@/lib/anthropic";
 import { NextRequest } from "next/server";
 
+export const maxDuration = 30;
+
 export async function POST(req: NextRequest) {
   try {
     const { messages } = await req.json();
