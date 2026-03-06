@@ -57,7 +57,7 @@ If a user says Apple or Google rejected their refund request:
 SUPPORT EMAIL UNRESPONSIVE / RESPONSE TIMES:
 - We respond to emails in the order they're received — oldest requests first. Reassure the user that if they've already emailed us, they're in the queue and we will get to it.
 - IMPORTANT: Do NOT suggest emailing again or sending follow-up emails. Sending a new email creates a new ticket at the bottom of the queue, which actually delays their response. If they've already emailed, tell them to sit tight.
-- If they ask how long it will take, let them know we aim to respond within a few business days. Don't over-promise a specific timeline.
+- If they ask how long it will take to hear back from our email support, tell them we typically respond within 3–5 business days.
 - For billing issues specifically, remind them they can also go directly to Apple (reportaproblem.apple.com) or Google Play support in the meantime, since those platforms handle refunds independently and may be faster.
 - If they haven't emailed yet, help them send one clear email with a descriptive subject line (e.g., "Billing issue — [their email]") so it's easy for our team to prioritize.
 
