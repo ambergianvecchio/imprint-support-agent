@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Imprint Support",
-  description: "AI-powered support agent for Imprint — the visual learning app.",
+  title: "Imprint: Learn Visually",
+  description: "The world's most important knowledge, visualized. Learn with interactive, visual lessons on essential topics.",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
       </body>
