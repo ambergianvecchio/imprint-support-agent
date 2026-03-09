@@ -112,15 +112,18 @@ export default function ChatWidget() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-imprint shadow-lg transition-transform hover:scale-105 hover:bg-imprint-hover"
+          className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-imprint py-3 pl-4 pr-5 shadow-lg transition-all hover:scale-105 hover:bg-imprint-hover"
           aria-label="Open support chat"
         >
-          <span
-            className="text-xl font-semibold text-white"
-            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="h-5 w-5 text-white"
           >
-            I
-          </span>
+            <path fillRule="evenodd" d="M4.848 2.771A49.144 49.144 0 0 1 12 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 0 1-3.476.383.39.39 0 0 0-.297.17l-2.755 4.133a.75.75 0 0 1-1.248 0l-2.755-4.133a.39.39 0 0 0-.297-.17 48.9 48.9 0 0 1-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97Z" clipRule="evenodd" />
+          </svg>
+          <span className="text-sm font-medium text-white">Chat with us</span>
         </button>
       )}
 
@@ -153,7 +156,7 @@ export default function ChatWidget() {
                     fill="currentColor"
                     className="h-4 w-4"
                   >
-                    <path d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" />
+                    <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
                   </svg>
                 </button>
               )}
