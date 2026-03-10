@@ -119,8 +119,8 @@ export default function ChatWindow({
 
   return (
     <div
-      className="fixed bottom-6 z-50 flex h-[520px] w-[380px] flex-col overflow-hidden rounded-2xl border border-imprint-border bg-imprint-bg shadow-2xl sm:h-[560px] sm:w-[400px]"
-      style={{ right: `${rightOffset}px` }}
+      className="fixed inset-0 z-50 flex flex-col overflow-hidden bg-imprint-bg sm:inset-auto sm:bottom-6 sm:right-[var(--chat-right)] sm:h-[560px] sm:w-[400px] sm:rounded-2xl sm:border sm:border-imprint-border sm:shadow-2xl"
+      style={{ "--chat-right": `${rightOffset}px` } as React.CSSProperties}
     >
       {/* Header */}
       <header className="flex items-center gap-3 border-b border-imprint-border bg-imprint-surface px-4 py-3">
@@ -134,11 +134,11 @@ export default function ChatWindow({
           </p>
         </div>
         <div className="flex items-center gap-1">
-          {/* New conversation button */}
+          {/* New conversation button — hidden on mobile */}
           {hasUserSent && (
             <button
               onClick={onNewWindow}
-              className="flex h-8 w-8 items-center justify-center rounded-lg text-imprint-muted transition-colors hover:bg-imprint-bg hover:text-imprint-dark"
+              className="hidden h-8 w-8 items-center justify-center rounded-lg text-imprint-muted transition-colors hover:bg-imprint-bg hover:text-imprint-dark sm:flex"
               aria-label="New conversation"
               title="New conversation"
             >
